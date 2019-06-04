@@ -6,3 +6,16 @@
 (define suffix "world")
 
 (string-append prefix "_" suffix)
+
+
+;exercise 3
+(define str "helloworld")
+(define  i 5)
+
+;(substring str 0 5)
+;(substring str 5 10)
+(string-append (substring str 0 i) "_" (substring str i 10))
+
+;exercise 4
+
+(string-append (substring str 0 i) (substring str (+ 1 i) 10))
