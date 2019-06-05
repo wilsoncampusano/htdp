@@ -5,7 +5,8 @@
 
 
 (if (number? in)
- (if (> in 0) (- in 1) (* -1 in))
- (if (string?) (string-length in) (if (boolean? in) 10 20 )
-     ) )
+    (if (> in 0) (- in 1) (* -1 in))
+    (if (string?)
+        (string-length in)
+        (if (boolean? in) 10 20 )))
 
