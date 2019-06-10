@@ -28,3 +28,5 @@
 
 ; exercise 16
 
+(define (image-area some-image)
+  (* (image-length some-image) (image-width some-image)))
