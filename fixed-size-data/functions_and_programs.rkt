@@ -27,6 +27,15 @@
   (and (boolean=? sunny false) (boolean=? friday true)))
 
 ; exercise 16
+(require 2htdp/image)
 
 (define (image-area some-image)
-  (* (image-length some-image) (image-width some-image)))
+  (* (image-height some-image) (image-width some-image)))
+
+;exercise 17
+(define (image-classify some-image)
+  (if
+   (= (image-height some-image) (image-width some-image))
+   "square"
+   (if (> (image-width some-image) (image-height some-image)) "wide" "tall")))
+;
