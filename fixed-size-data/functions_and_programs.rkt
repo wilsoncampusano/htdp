@@ -20,3 +20,11 @@
   (if (not (string=? "" s))
       (string-ith s (- (string-length s) 1))
        s))
+
+;exercise 15
+
+(define (==> sunny friday)
+  (and (boolean=? sunny false) (boolean=? friday true)))
+
+; exercise 16
+
