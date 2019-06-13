@@ -16,7 +16,7 @@
   (string-append
    "We have discovered that all people with the" "\n" "last name "
    lst " have won our lottery."
-    " So, " "\n" fst ", " "hurr y and pick up your prize."))
+    " So, " "\n" fst ", " "hurry and pick up your prize."))
 
 
 (define (closing signature-name)
@@ -26,3 +26,6 @@
 
 (letter "Mathew" "Fisler" "Felleisen")
 (letter "Kathi" "Felleisen" "Findler")
+
+(require 2htdp/batch-io)
+(write-file 'stdout (letter "Matt" "Fiss" "Fell"))
