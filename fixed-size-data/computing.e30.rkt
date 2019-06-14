@@ -26,3 +26,4 @@
 (define (profit ticket-price)
   (- (revenue ticket-price) (cost ticket-price)))
 
+(profit 4)
