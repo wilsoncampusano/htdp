@@ -6,9 +6,22 @@
 ; given 32, expect 0
 ; given 212, expect 100
 ; given -40, expect -40
-(check-expect (f2c -40) 40)
+(check-expect (f2c -40) -40)
 (check-expect (f2c 32) 0)
 (check-expect (f2c 212) 100)
 
 (define (f2c f)
   (* 5/9 (- f 32)))
+
+
+
+; Number -> Image
+; places a Image in the x axis on a scene
+(require 2htdp/image)
+
+(check-expect (render 50) (place-image CAR 5 Y-CAR BACKGROUND))
+(check-expect (render 200) (place-image CAR 200 Y-CAR BACKGROUND))
+
+(define CAR (circle  20 "outline" "red"))
+(define Y-CAR 0)
+(define BACKGROUND (empty-scene 200 200))
