@@ -12,3 +12,13 @@
 (define (string-first s)
   ... )
 
+
+;exercise 35
+; String -> 1String
+; takes s and return the las character of s
+; given:
+;       "World" for s
+; expected:
+;       "H"
+(define (string-last s)
+  ....)
